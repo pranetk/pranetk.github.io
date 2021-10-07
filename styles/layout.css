@@ -2,48 +2,74 @@
     font-family: comfortaa;
     src: url(../fonts/comfortaa.ttf);
 }
-*
-{
-    padding:0px;
-    margin:0px;
+
+* {
+    padding: 0px;
+    margin: 0px;
 }
-header{
-    width:100%;
-    display:flex;
+
+header {
+    width: 100%;
+    display: flex;
     flex-direction: row;
-    height:5vw;
-    padding:15px;
+    height: 5vw;
+    padding: 15px;
 }
+
 header ul {
-    width:95%;
-    margin:auto;
+    width: 95%;
+    margin: auto;
     height: inherit;
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     list-style: none;
 }
-header ul li
-{
-    width:20%;
-    height:inherit;
-    border-radius:40px;
-    text-align:center;
+
+header ul li {
+    width: 20%;
+    height: inherit;
+    border-radius: 40px;
+    text-align: center;
     line-height: 5vw;
     box-shadow: 5px 5px 5px black;
 }
-header ul li a
-{
-    font-family:comfortaa;
-    text-decoration:none;
-    color:black;
-    font-size:30px;
+
+header ul li a {
+    font-family: comfortaa;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
 }
 
-header ul li:hover 
-{
-    background-color:lightgray;
-    margin-top:2px;
-    margin-left:2px;
+header ul li:hover {
+    background-color: lightgray;
+    margin-top: 2px;
+    margin-left: 2px;
     box-shadow: 3px 3px 3px black;
+}
+
+@media only screen and (min-device-width:250px) and (max-device-width:740px) {
+    header ul {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+        margin-left: 0px;
+    }
+    header ul li {
+        width: 95%;
+        margin: auto;
+        height: 70px;
+        line-height: 15vw;
+    }
+    header ul li:hover {
+        background-color: lightgray;
+        box-shadow: 3px 3px 3px black;
+        width: 60%;
+        margin: auto;
+        height: 70px;
+    }
+    header {
+        height:15vw;
+    }
 }
